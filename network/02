@@ -1,1 +1,3 @@
-networksetup -getinfo Ethernet
+ifconfig | grep 'broadcast' | awk -F'broadcast ' '{print "(a) broadcast addr: " $2}'
+mask=$(eval ifconfig | grep 'broadcast' | awk -F'broadcast ' '{print $2}' | awk -F. '{print $1"."$2}') ; ifconfig |  grep -oE '\b'$mask'\.[0-9]{1,3}\.[0-9]{1,3}\b' | awk -F'\n' '{print "(b) subnet addr: "$1$2}'
+#networksetup -getinfo Ethernet
