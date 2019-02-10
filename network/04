@@ -1,0 +1,1 @@
+netstat -nr | awk '/default/{print }' | grep '^[0-9]'
