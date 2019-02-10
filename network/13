@@ -1,1 +1,7 @@
-13.9.112.10.in-addr.arpa domain name pointer e1z2r9p13.42.us.org.
+# Using the following command gives us the following result
+
+# net12=$(eval ifconfig | grep 'broadcast' | awk -F'inet ' '{print $2}' | awk -F' ' '{print $1}')
+# dig +short -x $net12
+
+#result
+e1z2r9p13.42.us.org.
