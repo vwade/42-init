@@ -1,0 +1,3 @@
+#Open any of these files 
+cat /etc/issue
+cat /etc/os-release
