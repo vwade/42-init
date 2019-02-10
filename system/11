@@ -1,0 +1,1 @@
+df -h | grep '/'| awk '{print "Used\tAvailable\n" $3 "\t" $4}'
