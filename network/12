@@ -1,2 +1,2 @@
-ifconfig | grep 'broadcast' | awk -F'inet ' '{print $2}' | awk -F' ' '{print $1}'
+echo $(ifconfig | grep 'broadcast' | awk -F'inet ' '{print $2}' | awk -F' ' '{print $1}')
 #cat /etc/resolv.conf | grep nameserver | awk '{print $2}'
