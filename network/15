@@ -1,0 +1,4 @@
+#In order to force url redirect, we need to inject our source url and target url into the /etc/hosts file.
+echo 'intra.42.fr 46.19.122.85' >> /etc/hosts
+
+#However, we do not have write access to this file.
