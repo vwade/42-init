@@ -1,1 +1,6 @@
+if [ -z $1 ]
+  then
+  echo 'usage: enter the login of a user to be deleted'
+  exit
+fi
 deluser $@
