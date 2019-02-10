@@ -1,3 +1,5 @@
-# To connect as the new user, use the following command.
+# To connect as the new user, use the following command. Substitute 'username' with your login.
+ssh username
 
-ssh new_user
+# It is also possible to log in with normal/super-user privileges using su command.
+su - username
