@@ -1,1 +1,1 @@
-traceroute slash16.org | awk '{print }'
+traceroute slash16.org | awk '{print $2}'
