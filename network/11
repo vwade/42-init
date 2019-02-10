@@ -1,1 +1,4 @@
-Run the command, then pipe into grep with "nat" as the string to search by. NAT is the network device which assigns a public address to an internal device with a private address. The IP address is inside parentheses next to the device name.
+# Run the command, then pipe into grep with "nat" as the string to search by. NAT is the network device which assigns a public address to an internal device with a private address. The IP address is inside parentheses next to the device name.
+traceroute slash16.org | grep 'nat' | awk -F' ' '{print $2" "$3}'
+
+# The command gives us the NAT layer, followed by its IP address.

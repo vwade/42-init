@@ -1,1 +1,4 @@
-echo 'intra.42.fr 46.19.122.85' >> /etc/hosts
+# To set up local rerouting the hosts file must be modified, which requires root level access.
+
+echo '46.19.122.85 intra.42.fr' >> /etc/hosts
+# This command affixes a new line starting with the IP address followed by the hostname and an optional series of hostname aliases.
