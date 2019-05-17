@@ -1,1 +1,1 @@
-ifconfig en1 | grep ether | awk -F' ' '{print "wlan (en1): "$2}'
+ifconfig en1 | grep ether | tr \\t \\n | tr \  \\n | grep \: | awk -F ' ' '{print "wlan (en1): "$0}'
